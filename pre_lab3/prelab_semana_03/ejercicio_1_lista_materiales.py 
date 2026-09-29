@@ -1,0 +1,14 @@
+pesos_piezas = [12.5, -5.0, 14.2, 0.0, 18.1, 10.5]
+
+for i in range(len(pesos_piezas)):
+    if pesos_piezas[i] < 0:
+        print("⚠️ Error de lectura: Flujo negativo descartado.")
+    elif pesos_piezas[i] <= 13:
+        print("Pieza Ligera aprobada.")
+    else:
+        print("Pieza Pesada aprobada.")
+"""aqui el programa debe evaluar si las piesas son valida o no y mostrarlo al final del programa"""
+
+if len  (pesos_piezas) >= 0:
+    print(f"Número de piezas válidas: {len([numero for numero in pesos_piezas if numero >= 0])}") 
+"""qui el programa debe mostrar el numero de piezas validas que se leyeron y que no fueron descartadas por ser negativas"""
